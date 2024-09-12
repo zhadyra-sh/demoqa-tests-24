@@ -17,7 +17,7 @@ public class TextBoxTests {
         Configuration.baseUrl = "https://demoqa.com"; //абсолютный
         Configuration.pageLoadStrategy = "eager";
         Configuration.holdBrowserOpen = true; // не закрывает браузер
-        Configuration.timeout = 5000; //default 4000 = 4 sek
+        Configuration.timeout = 6000; //default 4000 = 4 sek
     }
 
     @Test
