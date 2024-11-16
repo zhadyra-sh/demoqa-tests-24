@@ -3,8 +3,10 @@ package tests.simple;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.Owner;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -26,7 +28,8 @@ public class RegistrationRemoteTests {
 
     }
 
-
+    @DisplayName("Проверка формы регистрации")
+    @Owner("zhadyra.sh")
     @Test
     @Tag("demoqa")
     void successfulRegistrationTest() {
