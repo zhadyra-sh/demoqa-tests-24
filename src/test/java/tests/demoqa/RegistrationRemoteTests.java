@@ -1,4 +1,4 @@
-package tests.simple;
+package tests.demoqa;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
@@ -19,9 +19,10 @@ import static io.qameta.allure.Allure.step;
 public class RegistrationRemoteTests {
     @BeforeAll
     static void beforeAll() {
+        Configuration.browser = "chrome";
+        Configuration.browserVersion = "131.0";
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
-        //  Configuration.browser ="chrome";
         Configuration.timeout = 10000;
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
