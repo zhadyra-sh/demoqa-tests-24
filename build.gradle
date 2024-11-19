@@ -10,6 +10,10 @@ repositories {
 def allureVersion = "2.21.0"
 
 allure {
+        adapter {
+            aspectjVersion.set("1.9.21")
+
+        }
     report {
         version.set(allureVersion)
     }

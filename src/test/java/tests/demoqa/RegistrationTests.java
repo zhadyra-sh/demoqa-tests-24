@@ -1,5 +1,6 @@
-package tests.simple;
+package tests.demoqa;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.appear;
@@ -15,6 +16,7 @@ public class RegistrationTests extends TestBase {
         $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
         executeJavaScript("$('#fixedban').remove()");
         executeJavaScript("$('footer').remove()");
+
 
         $("#firstName").setValue("Test");
         $("#lastName").setValue("Testing");
