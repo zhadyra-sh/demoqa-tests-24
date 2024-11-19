@@ -19,12 +19,12 @@ import static io.qameta.allure.Allure.step;
 public class RegistrationRemoteTests {
     @BeforeAll
     static void beforeAll() {
-        Configuration.browser = "chrome";
-        Configuration.browserVersion = "131.0";
+        //Configuration.browser = "chrome";
+        //Configuration.browserVersion = "131.0";
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
         Configuration.timeout = 10000;
-        //Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of( //video
