@@ -82,6 +82,5 @@ public class RegistrationRemoteTests {
             $(".table-responsive").shouldHave(text("Test"), text("Testing"),
                     text("testing@gmail.ru"), text("1234567890"));
         });
-
     }
 }
