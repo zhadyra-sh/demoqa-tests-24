@@ -53,28 +53,32 @@ tasks.withType(Test) {
         }
     }
 }
-
-
-task simple_test(type: Test) {
+task demoqa_test(type: Test) {
     useJUnitPlatform {
-        includeTags("simple")
+        includeTags("demoqa")
     }
-}
 
-task remote_test(type: Test) {
-    useJUnitPlatform {
-        includeTags("remote")
+    task simple_test(type: Test) {
+        useJUnitPlatform {
+            includeTags("simple")
+        }
     }
-}
 
-task property_test(type: Test) {
-    useJUnitPlatform {
-        includeTags("property")
+    task remote_test(type: Test) {
+        useJUnitPlatform {
+            includeTags("remote")
+        }
     }
-}
 
-task hello_test(type: Test) {
-    useJUnitPlatform {
-        includeTags("hello")
+    task property_test(type: Test) {
+        useJUnitPlatform {
+            includeTags("property")
+        }
+    }
+
+    task hello_test(type: Test) {
+        useJUnitPlatform {
+            includeTags("hello")
+        }
     }
 }
