@@ -1,7 +1,7 @@
-package tests.demoqa;
+package tests.components;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.Test;
+import tests.demoQa.TestBase;
 
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;

@@ -1,4 +1,4 @@
-package tests.demoqa;
+package tests.components;
 
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
